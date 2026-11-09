@@ -10,8 +10,7 @@ public class Main {
 
     public void resume() {
         synchronized (lock) {
-
-            min =
+            paused = false;
         }
     }
 

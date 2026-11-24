@@ -20,6 +20,7 @@ When the Study Timer reaches zero, the program displays two productivity reports
 
 ## Tech Stack
 - Language: Java
+- Libraries: Scanner, Timer
 - Development Environment: IntelliJ IDEA
 
 ## Setup

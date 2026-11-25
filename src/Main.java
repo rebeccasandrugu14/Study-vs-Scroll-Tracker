@@ -10,7 +10,7 @@ public class Main {
     private static Object lock = new Object();
     private static boolean done = false;
 
-    //varibles for the desired studyed timer
+    //varibles for the desired stuyd timer
     private static int oristudysec = 0;
     private static int oriscrollsec = 0;
 
@@ -27,19 +27,18 @@ public class Main {
         }
     }
 
-    public static boolean isDoone() {
-    synchronized (lock) {
-        return done;
+    public static boolean isDone() {
+        synchronized (lock) {
+            return done;
+        }
     }
-    }
-}
 
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
         //Get user to enter their study infomation goals
-        System.out.print("How long are you studying in (minutes): ");
+        System.out.println("How long are you studying in (minutes): ");
         int totmin = scanner.nextInt();
         scanner.nextLine();
 
@@ -107,10 +106,13 @@ public class Main {
                             scroll.cancel();
 
                             //The ending message
+                            System.out.println();
                             System.out.println("Study session completed!");
+                            System.out.println();
 
                             //Display productivity reports
                             productivityReport(finalsec);
+                            System.out.println("\nType 'next' to continue to your productivity reflection.");
                         }
                     }
                 }
@@ -136,7 +138,7 @@ public class Main {
             scroll.scheduleAtFixedRate(scrolltask, 1000, 1000);
 
             while(!isDone()) {
-                System.out.println("Press S to resume studying or B to take scroll break");
+                System.out.println("Type S to resume studying or B to take scroll break");
                 String choice = scanner.nextLine();
 
                 if(isDone()) {
@@ -145,7 +147,7 @@ public class Main {
                 if(choice.equalsIgnoreCase("S")) {
                     //change the boolean pause value
                     study();
-                    System.out.print.println("Studying resumed.");
+                    System.out.println("Studying resumed.");
                 }
                 else if(choice.equalsIgnoreCase("B")) {
                     scroll();
@@ -155,6 +157,7 @@ public class Main {
                     System.out.println("Pick a vaild choice");
                 }
             }
+            reflect(scanner);
         }
         scanner.close();
     }
@@ -167,24 +170,41 @@ public class Main {
         double scrollper = (oriscrollsec / (double) finalsec) * 100;
 
         //Oringial Duration Report
-        System.out.println("Desired Duratoin Report");
-        System.out.println("Desired duration: " + finalsec/60.0 + " minutes");
-        System.out.println("Time spent studying: " + oristudysec/60.0 + " minutes");
-        System.out.println("Time spent scrolling: " + oriscrollsec/60.0 + " minutes");
+        System.out.println("===Planned Duration Report---");
+        System.out.println("Desired duration: " + String.format("%.2f", (finalsec/60.0)) + " minutes");
+        System.out.println("Time spent studying: " + String.format("%.2f", (oristudysec/60.0)) + " minutes");
+        System.out.println("Time spent scrolling: " + String.format("%.2f", (oriscrollsec/60.0)) + " minutes");
         System.out.println("Study percentage: " + String.format("%.2f", studyper) + "%");
         System.out.println("Scroll percentage: " + String.format("%.2f", scrollper) + "%");
-
-        System.out.println();
 
         // Calculate overall percentages
         double totstudy = (finalsec / (double) (finalsec + scrollsec)) * 100;
         double totscroll = (scrollsec / (double) (finalsec + scrollsec)) * 100;
 
         //Overall Duration Report
-        System.out.println("\nOverall Report");
-        System.out.println("Total Duration: " + (finalsec + scrollsec)/60.0 + " minutes");
-        System.out.println("Time spent studying " + finalsec/60.0 + " minutes");
-        System.out.println("Time spent scrolling " + scrollsec/60.0 + " minutes");
+        System.out.println("\n---Overall Report===");
+        System.out.println("Total Duration: " + String.format("%.2f", ((finalsec + scrollsec)/60.0)) + " minutes");
+        System.out.println("Time spent studying " +  String.format("%.2f", (finalsec/60.0)) + " minutes");
+        System.out.println("Time spent scrolling " +  String.format("%.2f", (scrollsec/60.0)) + " minutes");
         System.out.println("Study percentage: " + String.format("%.2f", totstudy) + "%");
         System.out.println("Scroll percentage: " + String.format("%.2f", totscroll) + "%");
     }
+
+    public static void reflect(Scanner scanner) {
+        System.out.println();
+        System.out.println("Are you happy with your producity score? (Yes or No)");
+
+        String answer = scanner.nextLine();
+        if(answer.equalsIgnoreCase("Yes")){
+            System.out.println("Amazing job! Keep up your positive study habits!");
+            System.out.println("Thanks for using the Study vs. Scroll Tracker!");
+        }
+        else if(answer.equalsIgnoreCase("No")) {
+            System.out.println("Keep working hard towards your study goals!");
+            System.out.println("Thanks for using the Study vs. Scroll Tracker!");
+        }
+        else {
+            System.out.println("Thanks for using the Study vs. Scroll Tracker!");
+        }
+    }
+}

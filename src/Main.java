@@ -16,7 +16,7 @@ public class Main {
 
     //Starts or resumes the user's study timer
     public static void study() {
-        //Make sure only one timer can access at a time
+        //Make sure only one timer can be access at a time
         synchronized (lock) {
             paused = false;
         }

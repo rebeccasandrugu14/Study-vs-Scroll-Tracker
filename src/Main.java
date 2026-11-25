@@ -3,7 +3,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Main {
-    // varibles b/w study & scroll timer
+    //varibles b/w study & scroll timer
     private static boolean paused = true;
     private static int studysec = 0;
     private static int scrollsec = 0;

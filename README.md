@@ -65,14 +65,14 @@ Installation and Setup:
 Example:
 ```text
 How long are you studying in (minutes): 
-*`1`* (user input)
+1 (user input)
 To start timer, type start
-*start* (user input)
+start (user input)
 Type S to resume studying or B to take scroll break
-*B* (user input)
+B (user input)
 Scrolling break.
 Type S to resume studying or B to take scroll break
-*S* (user input)
+S (user input)
 Studying resumed.
 Type S to resume studying or B to take scroll break
 ...
@@ -97,11 +97,11 @@ Scroll percentage: 23.08%
 
 
 Type 'next' to continue to your productivity reflection.
-*next* (user input)
+next (user input)
 
 
 Are you happy with your productivity scores? (Yes or No)
-*yes* (user input)
+yes (user input)
 Amazing job! Keep up your positive study habits!
 Thanks for using the Study vs. Scroll Tracker!
 ```

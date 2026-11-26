@@ -64,31 +64,46 @@ Installation and Setup:
 
 Example:
 ```text
-Welcome to Study-vs-Scroll-Tracker!
-Enter date (xx/xx/xxxx): 11/1/26
-Enter desired study duration (minutes): 60
-
-Study Session Started!
-
-Overall Timer: 60:00
-Study Timer: 60:00
-Scrolling Timer: 00:00
-
-Press S (resume studying) or B (take a scroll break): B
-
+How long are you studying in (minutes): 
+1 (user input)
+To start timer, type start
+start (user input)
+Type S to resume studying or B to take scroll break
+B (user input)
+Scrolling break.
+Type S to resume studying or B to take scroll break
+S (user input)
+Studying resumed.
+Type S to resume studying or B to take scroll break
 ...
 
-Study Session Complete!
+Study session completed!
 
---- Original Duration Report ---
-Original Duration: 60 minutes
-Time Studying: 30 minutes (50%)
-Time Doomscrolling: 30 minutes (50%)
 
---- Final Session Report ---
-Total Time: 90 minutes
-Total Study Time: 60 minutes (66.7%)
-Total Doomscrolling Time: 30 minutes (33.3%)
+---Planned Duration Report---
+Desired duration: 1.00 minutes
+Time spent studying: 0.70 minutes
+Time spent scrolling: 0.30 minutes
+Study percentage: 70.00%
+Scroll percentage: 30.00%
+
+
+---Overall Report---
+Total Duration: 1.30 minutes
+Time spent studying 1.00 minutes
+Time spent scrolling 0.30 minutes
+Study percentage: 76.92%
+Scroll percentage: 23.08%
+
+
+Type 'next' to continue to your productivity reflection.
+next (user input)
+
+
+Are you happy with your productivity scores? (Yes or No)
+yes
+Amazing job! Keep up your positive study habits!
+Thanks for using the Study vs. Scroll Tracker!
 ```
 
 ## Roadmap

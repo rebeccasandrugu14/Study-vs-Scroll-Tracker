@@ -107,9 +107,26 @@ Thanks for using the Study vs. Scroll Tracker!
 ```
 
 ## Roadmap
-Future Development:
-- Users set scrolling time limits
-- Display productivity trends over time for users to monitor their progress
+
+### Completed Features
+
+- [x] Implement user input for desired study duration
+- [x] Create the Overall Timer
+- [x] Create the Study Timer
+- [x] Create the Scrolling Timer
+- [x] Implement pause and resume functionality
+- [x] Implement synchronization between timers
+- [x] Generate the Planned Duration Report
+- [x] Generate the Overall Report
+- [x] Implement productivity reflection and supportive messages
+- [x] Implement input validation and error handling
+- [x] Update the system diagram and README documentation
+
+### Future Development
+
+- [ ] Save study session history using File I/O
+- [ ] Allow users to set scrolling time limits
+- [ ] Display productivity trends over time
 
 ## Author
 Rebecca Sandrugu: [GitHub Link](https://github.com/rebeccasandrugu14)

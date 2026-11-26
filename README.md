@@ -13,15 +13,17 @@ Students enter their desired study duration in minutes and use three timers to t
 
 When the Study Timer reaches zero, the program displays two productivity reports:
 
-- Original Duration Report: Shows the minutes and percentages spent studying versus doomscrolling during the originally planned study duration.
-- Final Session Report: Shows the total minutes and percentages spent studying versus doomscrolling throughout the entire session, including time beyond the originally planned duration.
+- Planned Duration Report: Shows the minutes and percentages spent studying versus doomscrolling during the originally planned study duration.
+- Overall Report: Shows the total minutes and percentages spent studying versus doomscrolling throughout the entire session, including time beyond the originally planned duration.
+
 
 ![System diagram](FlowChart.png)
 
 ## Tech Stack
 - Language: Java
-- Libraries: Scanner, Timer
+- Libraries: java.util.Scanner, java.util.Timer, java.util.TimerTask
 - Development Environment: IntelliJ IDEA
+- Data Storage: In-memory storage using variables (no persistent storage)
 
 ## Setup
 Prerequisites:

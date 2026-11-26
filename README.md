@@ -42,9 +42,9 @@ Installation and Setup:
     - Go to File → Project Structure → Project
     - Select the installed JDK and click Apply, then OK
 6. Mark the src folder as the Sources Root if it’s not already marked
-    - Right-click the src folder
-    - Select Mark Directory as
-    - Select Sources Root (src folder should appear blue)
+    - Right-click the **src** folder
+    - Select **Mark Directory as**
+    - Select **Sources Root** (src folder should appear blue)
 7. Open the src folder and locate Main.java
 8. Click the green Run button next to the main() method to start the program
 

@@ -101,7 +101,7 @@ next (user input)
 
 
 Are you happy with your productivity scores? (Yes or No)
-yes
+yes (user input)
 Amazing job! Keep up your positive study habits!
 Thanks for using the Study vs. Scroll Tracker!
 ```

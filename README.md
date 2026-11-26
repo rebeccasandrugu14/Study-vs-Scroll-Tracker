@@ -51,11 +51,16 @@ Installation and Setup:
 
 ## Usage
 1. Enter the date & the desired study duration in minutes.
-2. Begin studying while the Overall Timer and Study Timer count down.
-3. Switch to scrolling mode by typing B when taking a break. The study timer pauses, while the scrolling timer begins tracking time spent doomscrolling. The overall timer continues counting down.
-4. Switch back to studying mode by typing S to resume the Study Timer.
-5. Continue until the Study Timer reaches zero.
-6. View two productivity reports at the end of the session.
+2. Type start to begin the study session.
+3. Begin studying while the Overall Timer and Study Timer count down.
+4. Switch to scrolling mode by typing B when taking a break. The study timer pauses, while the Scrolling Timer begins tracking time spent doomscrolling. The Overall Timer continues counting down until the planned duration is reached
+5. Switch back to studying mode by typing S to resume the Study Timer and pause the Scrolling Timer.
+6. Continue until the Study Timer reaches zero.
+7. View the Planned Duration Report and Overall Report at the end of the session.
+8. Type next to continue to the productivity reflection
+9. Enter Yes or No to indicate whether you are satisfied with your productivity scores.
+10. Receive a supportive message before the program ends.
+
 
 Example:
 ```text

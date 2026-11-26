@@ -27,9 +27,11 @@ When the Study Timer reaches zero, the program displays two productivity reports
 
 ## Setup
 Prerequisites:
-- Download Java Development Kit (JDK)
-- Download IntelliJ IDEA
-- Download Git
+Before running the program, download and install the following: 
+Java Development Kit (JDK): Click this [link](https://www.oracle.com/java/technologies/downloads/) below to download the appropriate version for your computer
+IntelliJ IDEA: Click this [link](https://www.jetbrains.com/idea/?source=google&medium=cpc&campaign=AMER_en_US_IDEA_Google_Branded&term=intellij%20idea&content=829313526414&gad_source=1&gad_campaignid=9730672721&gbraid=0AAAAADloJziRbHD3P7GGkbA6GoJNd7OLN&gclid=CjwKCAiAzp_YBhAJEiwASf8kHRsJlOuVkK-sqs87xcLDxhfErm-p-tOkfWTsXHyDW5zAhePM1hICmBoCOMAQAvD_BwE) to download and IntelliJ IDEA
+Git: Click this [link](https://git-scm.com/install/windows) to download and install the appropriate version of git for your operating system
+
 
 1. Open Terminal and clone the repository: *git clone https://github.com/rebeccasandrugu14/Study-vs-Scroll-Tracker.git*
 2. Navigate to the project directory: *cd Study-vs-Scroll-Tracker*

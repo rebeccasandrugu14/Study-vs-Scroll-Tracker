@@ -23,6 +23,7 @@ When the Study Timer reaches zero, the program displays two productivity reports
 - Language: Java
 - Libraries: java.util.Scanner, java.util.Timer, java.util.TimerTask
 - Development Environment: IntelliJ IDEA
+- Version Control: Git and GitHub
 - Data Storage: In-memory storage using variables (no persistent storage)
 
 ## Setup

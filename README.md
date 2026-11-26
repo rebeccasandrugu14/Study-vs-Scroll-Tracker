@@ -15,6 +15,7 @@ When the Study Timer reaches zero, the program displays two productivity reports
 
 - Planned Duration Report: Shows the minutes and percentages spent studying versus doomscrolling during the originally planned study duration.
 - Overall Report: Shows the total minutes and percentages spent studying versus doomscrolling throughout the entire session, including time beyond the originally planned duration.
+- After viewing the productivity reports, users are asked whether they are satisfied with their productivity scores and receive a supportive message based on their response.
 
 
 ![System diagram](FlowChart.png)

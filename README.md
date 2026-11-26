@@ -120,7 +120,6 @@ Thanks for using the Study vs. Scroll Tracker!
 - [x] Generate the Overall Report
 - [x] Implement productivity reflection and supportive messages
 - [x] Implement input validation and error handling
-- [x] Update the system diagram and README documentation
 
 ### Future Development
 

@@ -65,7 +65,7 @@ Installation and Setup:
 Example:
 ```text
 How long are you studying in (minutes): 
-*1* (user input)
+*`1`* (user input)
 To start timer, type start
 *start* (user input)
 Type S to resume studying or B to take scroll break

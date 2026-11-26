@@ -127,5 +127,10 @@ Thanks for using the Study vs. Scroll Tracker!
 - [ ] Allow users to set scrolling time limits
 - [ ] Display productivity trends over time
 
+## Video Demo
+
+[Video](https://drive.google.com/file/d/1Kgb40yP4PWe8bJru1x6pDlmpMVO0RLF4/view?usp=sharing)
+
+
 ## Author
 Rebecca Sandrugu: [GitHub Link](https://github.com/rebeccasandrugu14)

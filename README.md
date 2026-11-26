@@ -50,7 +50,7 @@ Installation and Setup:
 
 
 ## Usage
-1. Enter the date & the desired study duration in minutes.
+1. Enter the desired study duration in minutes.
 2. Type start to begin the study session.
 3. Begin studying while the Overall Timer and Study Timer count down.
 4. Switch to scrolling mode by typing B when taking a break. The study timer pauses, while the Scrolling Timer begins tracking time spent doomscrolling. The Overall Timer continues counting down until the planned duration is reached

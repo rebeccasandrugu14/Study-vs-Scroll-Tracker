@@ -39,15 +39,14 @@ Installation and Setup:
 3. Open IntelliJ IDEA.
 4. Select File, then Open, and choose the Study-vs-Scroll-Tracker folder.
 5. Ensure that the installed JDK is selected as the project's SDK
-6. Go to File → Project Structure → Project
-7. Select the installed JDK and click Apply, then OK
-Mark the src folder as the Sources Root if it’s not already marked
-Right-click the src folder
-Select Mark Directory as
-Select Sources Root (src folder should appear blue)
-Open the src folder and locate Main.java
-Click the green Run button next to the main() method to start the program
-
+  - Go to File → Project Structure → Project
+  - Select the installed JDK and click Apply, then OK
+6. Mark the src folder as the Sources Root if it’s not already marked
+  - Right-click the src folder
+  - Select Mark Directory as
+  - Select Sources Root (src folder should appear blue)
+7. Open the src folder and locate Main.java
+8. Click the green Run button next to the main() method to start the program
 
 
 ## Usage

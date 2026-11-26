@@ -43,8 +43,27 @@ public class Main {
 
         //User enters in their study goals
         System.out.println("How long are you studying in (minutes): ");
-        int totmin = scanner.nextInt();
-        scanner.nextLine();
+        int totmin = 0;
+
+        //Repeats until user enters a valid number
+        while(true) {
+            //Checks if the user's input is an integer
+            if(scanner.hasNextInt()) {
+                totmin = scanner.nextInt();
+                scanner.nextLine();
+
+                //If the number is positive and <= to 24 hours(in minutes)
+                //exits the loops
+                if (totmin > 0 && totmin <= 1440) {
+                    break;
+                }
+            } else {
+                //reads and disregards inputs that aren't an integer
+                scanner.nextLine();
+            }
+            //Prints a warning message
+            System.out.println("Please enter a whole number between 1 and 1440.");
+        }
 
         //Converts into minutes and initializes the values of studysec & scrollsec
         int finalsec = totmin * 60;
@@ -54,6 +73,11 @@ public class Main {
         //Asks the user to start the timers
         System.out.println("To start timer, type start");
         String start = scanner.nextLine();
+
+        while(!start.equalsIgnoreCase("start")) {
+            System.out.println("Type start to begin");
+            start = scanner.nextLine();
+        }
 
         //Starts the overall study timer: original study duration with no pauses
         if (start.equalsIgnoreCase("start")) {
@@ -185,7 +209,7 @@ public class Main {
         double scrollper = (oriscrollsec / (double) finalsec) * 100;
 
         //Planned Duration Report
-        System.out.println("===Planned Duration Report---");
+        System.out.println("---Planned Duration Report---");
         System.out.println("Desired duration: " + String.format("%.2f", (finalsec/60.0)) + " minutes");
         System.out.println("Time spent studying: " + String.format("%.2f", (oristudysec/60.0)) + " minutes");
         System.out.println("Time spent scrolling: " + String.format("%.2f", (oriscrollsec/60.0)) + " minutes");
@@ -197,7 +221,7 @@ public class Main {
         double totscroll = (scrollsec / (double) (finalsec + scrollsec)) * 100;
 
         //Overall Duration Report
-        System.out.println("\n---Overall Report===");
+        System.out.println("\n---Overall Report---");
         System.out.println("Total Duration: " + String.format("%.2f", ((finalsec + scrollsec)/60.0)) + " minutes");
         System.out.println("Time spent studying " +  String.format("%.2f", (finalsec/60.0)) + " minutes");
         System.out.println("Time spent scrolling " +  String.format("%.2f", (scrollsec/60.0)) + " minutes");
@@ -212,16 +236,19 @@ public class Main {
         System.out.println("Are you happy with your productivity scores? (Yes or No)");
 
         String answer = scanner.nextLine();
+        while(!answer.equalsIgnoreCase("Yes") && !answer.equalsIgnoreCase("No")) {
+            System.out.println("Please type Yes or No.");
+            answer = scanner.nextLine();
+        }
         //Give supportive messages and a closing message for users
         if(answer.equalsIgnoreCase("Yes")){
             System.out.println("Amazing job! Keep up your positive study habits!");
-            System.out.println("Thanks for using the Study vs. Scroll Tracker!");
-        }
-        else if(answer.equalsIgnoreCase("No")) {
-            System.out.println("Keep working hard towards your study goals!");
+            System.out.println();
             System.out.println("Thanks for using the Study vs. Scroll Tracker!");
         }
         else {
+            System.out.println("Keep working hard towards your study goals!");
+            System.out.println();
             System.out.println("Thanks for using the Study vs. Scroll Tracker!");
         }
     }

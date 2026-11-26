@@ -37,7 +37,7 @@ Before running the program, download and install the following:
 
 Installation and Setup:
 1. Open Terminal and clone the repository: `git clone https://github.com/rebeccasandrugu14/Study-vs-Scroll-Tracker.git`
-2. Navigate to the project directory: cd Study-vs-Scroll-Tracker
+2. Navigate to the project directory: `cd Study-vs-Scroll-Tracker`
 3. Open IntelliJ IDEA.
 4. Select File, then Open, and choose the Study-vs-Scroll-Tracker folder.
 5. Ensure that the installed JDK is selected as the project's SDK

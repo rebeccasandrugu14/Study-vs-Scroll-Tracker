@@ -33,6 +33,23 @@ Before running the program, download and install the following:
 3. Git: Click this [link](https://git-scm.com/install/windows) to download and install the appropriate version of git for your operating system
 
 
+Installation and Setup:
+1. Open Terminal and clone the repository: git clone https://github.com/rebeccasandrugu14/Study-vs-Scroll-Tracker.git
+2. Navigate to the project directory: cd Study-vs-Scroll-Tracker
+3. Open IntelliJ IDEA.
+4. Select File, then Open, and choose the Study-vs-Scroll-Tracker folder.
+5. Ensure that the installed JDK is selected as the project's SDK
+6. Go to File → Project Structure → Project
+7. Select the installed JDK and click Apply, then OK
+Mark the src folder as the Sources Root if it’s not already marked
+Right-click the src folder
+Select Mark Directory as
+Select Sources Root (src folder should appear blue)
+Open the src folder and locate Main.java
+Click the green Run button next to the main() method to start the program
+
+
+
 ## Usage
 1. Enter the date & the desired study duration in minutes.
 2. Begin studying while the Overall Timer and Study Timer count down.
